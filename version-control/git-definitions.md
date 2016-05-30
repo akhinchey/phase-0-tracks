@@ -1,7 +1,5 @@
 # Git Definitions
 
-**Instructions: ** Define each of the following Git concepts.
-
 * What is version control?  Why is it useful?
 Version control essentially creates an interactive timeline where a project can be viewed at any point in the coding process. You can view the entire history of the project and all of the files in it, as well as revert to any point in that history and makes changes as you see fit. It is useful because it gives greater flexibility with modifying the project’s code without having to worry about making any permanent changes or saving multiple copies of project files.
 
