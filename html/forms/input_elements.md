@@ -17,7 +17,7 @@
 * checkbox
 
 * select - represents a control that presents a menu of options.
-- options - The options within the menu are represented by <option> elements
+* options - The options within the menu are represented by <option> elements
 
 * button - represents a clickable button
 
