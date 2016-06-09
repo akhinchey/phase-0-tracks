@@ -1,0 +1,28 @@
+section#contact-info p {
+  font-size: .8em;
+}
+
+.job {
+  background-color: #e9e5dc;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 10px 0;
+}
+/* used this class on ul to target child li elements */
+.small-text li {
+  font-size: .8em;
+}
+
+#contact-info a:link {
+   color: red;
+}
+
+#contact-info a:visited {
+  color: purple;
+}
+
+#contact-info a:hover {
+  color: blue;
+}
+
+
