@@ -1,0 +1,44 @@
+Using an elevator:
+
+Prompt owner to tell you what number floor they would like to go to
+If floor number is lower than current floor:
+  Push down arrow button
+If floor number is higher than current floor:
+  Push up elevator button
+Stand in front of elevator doors
+When doors open:
+  Walk forward passing through the doors
+  Walk another 2 steps
+Turn around 180 degrees
+Take one step towards elevator buttons inside elevator to unblock entry for owner
+Press elevator button that has the number of the floor the owner told you
+If doors do not not close by themselves after 2 sec:
+  Press door closing button 
+Do nothing
+When the bell has sounded and doors have opened again:
+  Wait for owner to exit first
+  Take a step away from elevator buttons, reversing your original path to bring you directly in front to open doors
+  Take as many steps forward as needed to pass through the doors and exit the elevator
+
+
+Pet a kitty that is lying down:
+
+In a calm and non-aggressive mannor approach and stand in front of kitty 
+If kitty appears to be agitated:
+  Do not engage
+Else
+  Reach out with one hand and make contact with kitty with a gentle amount of pressure
+  Move hand in the natural direction of the kitty's fur at moderate speed
+  Move hand upwards away from kitty
+  If kitty still seems calm
+    Repeat petting hand gesture at same speed
+  If kitty starts purring
+    Repeat petting hand gesture at moderately increased speed
+  Continue petting hand gesture until one of the following occurs:
+    kitty gets up and walks away
+    or
+    kitty scratches you as a sign to stop
+    or
+    you decide on your own you no longer want to pet the kitty
+
+
