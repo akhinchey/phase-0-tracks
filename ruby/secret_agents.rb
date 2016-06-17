@@ -25,6 +25,20 @@
 #     increment index to the next letter of the string
 #   end while
 
+# User interface -
+# ask if user wants to encrypt or decrypt
+#  if encrypt
+#    ask for password
+#    if password is correct
+#      run encrypt
+#    end
+#  elsif decrypt
+#    ask for password
+#    if password is correct
+#      run decrypt
+#    end
+#  end
+
         
 def encrypt (str) 
   i = 0
@@ -44,7 +58,7 @@ def encrypt (str)
 new_str
 end
 
-encrypt("ze d")
+# encrypt("ze d")
 
 
 
@@ -67,9 +81,47 @@ new_str
   
 end
 
-decrypt("afe")
+# decrypt("afe")
 
 
+
+######
+# Calling a method inside of another method
+
+# decrypt(encrypt("swordfish"))
+
+
+#####
+
+
+
+
+
+puts "Do you want to encrypt or decrypt:"
+user_input = gets.chomp
+
+if user_input == "encrypt"
+  puts "Please enter password:"
+  password = gets.chomp
+
+  if password == "puppy"
+    puts "Please enter string"
+    string = gets.chomp
+     puts encrypt(string)
+  end
+elsif user_input == "decrypt"
+  puts "Please enter password:"
+  password = gets.chomp
+  
+  if password == "puppy"
+    puts "Please enter string"
+    string = gets.chomp
+     puts decrypt(string)
+  end
+else
+  puts "not understood"
+end
+exit 
 
 
 
