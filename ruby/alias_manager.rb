@@ -46,6 +46,22 @@ def secret_agent_name (name)
   
 end
 
+input = "yes"
 
-puts secret_agent_name("Felicia Torres")
+names_array =[]
+
+while input == "yes"
+puts "Please enter name to encode:"
+agent_name = gets.chomp
+
+puts secret_agent_name(agent_name)
+
+names_array.push("#{agent_name} uses the alias: #{secret_agent_name(agent_name)}")
+
+puts "Would you like to add another name? Type 'yes' or 'no':"
+input = gets.chomp
+
+end
+
+puts names_array
 
