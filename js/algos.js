@@ -1,4 +1,4 @@
-var test = ["long phrase","longest phrase","longer phrase"];
+
 
 function longestStr(arr) {
   var longest = arr[0];
@@ -10,4 +10,27 @@ function longestStr(arr) {
     return longest;
 }
 
+
+function compareObjects() {
+  for (var key in obj1) {
+    for (var nextKey in obj2) {
+      if (key === nextKey) {
+        if (obj1[key] === obj2[nextKey]) {
+          return true;
+        } 
+      }
+    }
+  }
+  return false;
+}
+
+
+// Driver code for longestStr
+var test = ["long phrase","longest phrase","longer phrase"];
 longestStr(test);
+
+
+// Driver code for compareObjects
+var obj1 = {name: "Steven", age: 54};
+var obj2 = {name: "Tamir", age: 54};
+compareObjects(obj1, obj2);
