@@ -25,6 +25,19 @@ function compareObjects() {
 }
 
 
+function randomWords(num) {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var newWord ="";
+  
+  for (var i =0; i < num; i++) {
+    newWord += (alphabet[Math.round((Math.random() * 10))]);
+  }
+  
+  return newWord;
+}
+
+
+
 // Driver code for longestStr
 var test = ["long phrase","longest phrase","longer phrase"];
 longestStr(test);
