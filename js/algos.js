@@ -11,7 +11,7 @@ function longestStr(arr) {
 }
 
 
-function compareObjects() {
+function compareObjects(obj1, obj2) {
   for (var key in obj1) {
     for (var nextKey in obj2) {
       if (key === nextKey) {
