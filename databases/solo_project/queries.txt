@@ -1,0 +1,9 @@
+SELECT * FROM current_pokemon;
+
+UPDATE current_pokemon SET age=3 WHERE name="Magnemite";
+
+SELECT * FROM current_pokemon, types WHERE current_pokemon.type_id = types.id;
+
+SELECT current_pokemon.name, types.name FROM current_pokemon JOIN types ON current_pokemon.type_id = types.id;
+
+DELETE FROM current_pokemon WHERE age>5;
