@@ -1,5 +1,8 @@
-puts "Welcome, here is your current Christmas card list:"
+require 'sqlite3'
 
+db = SQLite3::Database.new("christmas_list.db")
+
+puts "Welcome, here is your current Christmas card list:"
 
 list_loop = true
 
@@ -20,12 +23,27 @@ while list_loop == true
     case update_choice
 
     when "add"
-      puts "add"
+      puts "Enter first and last name:"
+      name = gets.chomp
+
+      puts "Enter street address:"
+      address = gets.chomp
+
+      puts "You're adding #{name}, #{address}."
 
     when "update"
-      puts "update"
+      puts "Enter the name of the person who's address you want to update:"
+      name = gets.chomp
+
+      puts "Enter the new address for #{name}:"
+      address = gets.chomp
+
     when "delete"
-      puts "delete"
+      puts "Enter the name of the person you want to delete:"
+      name = gets.chomp
+
+      puts "#{name} has been deleted"
+
 
     else
       puts "That is not valid input."
