@@ -21,7 +21,7 @@ db.execute(create_table_cmd)
  thing = db.execute("SELECT * FROM card_list").flatten[1]
  puts thing
 
- puts "Welcome, here is your current Christmas card list:"
+ puts "Welcome to your current Christmas card list:"
  
  list_loop = true
  
@@ -61,7 +61,9 @@ db.execute(create_table_cmd)
      when "delete"
        puts "Enter the name of the person you want to delete:"
        name = gets.chomp
- 
+      
+       db.execute("DELETE FROM card_list WHERE name = ?", [name])
+
        puts "#{name} has been deleted"
  
  
