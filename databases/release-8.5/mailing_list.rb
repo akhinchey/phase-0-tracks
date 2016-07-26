@@ -59,12 +59,12 @@ while list_loop == true
       puts "Enter the name of the person who's address you want to update:"
       name = gets.chomp
 
-        if name == db.execute("SELECT * FROM card_list WHERE name = ?", [name])
+        if name == db.execute("SELECT * FROM card_list WHERE name = ?", [name]).flatten[1]
 
-        db.execute("UPDATE card_list SET address = ? WHERE name = ?", [address,  name])
         puts "Enter the new address for #{name}:"
         address = gets.chomp
- 
+
+        db.execute("UPDATE card_list SET address = ? WHERE name = ?", [address,  name])
         puts "Address for #{name} had been updated to #{address}"
         else
          puts "That name is currently not on the list."
@@ -74,7 +74,7 @@ while list_loop == true
       puts "Enter the name of the person you want to delete:"
       name = gets.chomp
      
-      if name == db.execute("SELECT * FROM card_list WHERE name = ?", [name])
+      if name == db.execute("SELECT * FROM card_list WHERE name = ?", [name]).flatten[1]
   
         db.execute("DELETE FROM card_list WHERE name = ?", [name])
         puts "#{name} has been deleted"
@@ -103,5 +103,3 @@ current_card_list.each do |person|
   puts "#{person[1]}: #{person[2]}"
 end
      
-
-   
